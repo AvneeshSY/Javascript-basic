@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+     <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit praesentium voluptates in omnis non
+        consequuntur
+        ipsum dolor fuga voluptas placeat.</p>
+     
+     <button onclick="ainnerHTML()">innerHTML</button>
+     <button onclick="binnerText()">innertext</button>
+
+     <p id="para2"></p>
+     <script>
+
+        
+        function ainnerHTML() {
+            let text = document.getElementById("para").innerHTML;
+            document.getElementById("para2").innerText = text;
+        }
+
+        function binnerText() {
+            let text = document.getElementById("para").innerText;
+            document.getElementById("para2").innerText = text;
+
+        }
+
+    </script>
+</body>
+
+
+</html>

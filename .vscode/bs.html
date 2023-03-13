@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventlistner</title>
+    <style>
+        * {
+            background: linear-gradient(90deg, rgb(241, 240, 132) 0%, rgb(16, 169, 19) 35%, rgba(0, 212, 255, 1) 100%);
+        }
+        
+
+        p {
+            color: red;
+
+            text-align: center;
+            font-size: larger;
+            font-size: 100px;
+            margin-top: 13%;
+            cursor: pointer;
+
+
+        }
+        button{
+            background: rgb(84, 239, 12);
+            color: rgb(18, 17, 17);
+            border-radius: 4px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body  id="bd">
+    <p id="av">HELLO AVNEESH SINGH <span>it is an span..hello mr avneesh singh yadav.i hope you are fine.</span></p>
+    <button id="btn">click me</button>
+
+    <script>
+
+        document.getElementById('av').addEventListener('click', function () {
+            let text = document.getElementById('av').innerText;
+            document.getElementById('av').innerText = 'Hello Mr. Avneesh singh yadav.';
+            document.getElementById('ab').innerText = 'How are you?';
+
+        });
+        document.getElementById('btn').addEventListener('click',function(){
+            document.getElementById('bd').innerText='DANGER!';
+            document.getElementById('bd').style.color='white'
+            document.getElementById('bd').style.textAlign='center'
+            document.getElementById('bd').style.fontSize='100px'
+            document.getElementById('bd').style.marginTop='50vh'
+            // document.getElementById('bd').style.color='linear-gradient(red,green);'
+            
+        //   let inner=  document.getElementById('av').innerText ;
+        //   document.getElementById('btn').innerText=inner;
+
+
+        });
+
+
+    </script>
+</body>
+
+</html>
